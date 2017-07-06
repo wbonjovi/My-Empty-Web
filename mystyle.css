@@ -1,3 +1,23 @@
-hr {color: sienna;}
-p {margin-left: 20px;}
-body {background-image: url("image/IMG_8145.JPG")}
+div
+{
+    display: block;
+    float: left;
+    width: 90%;
+    max-width: 30%;
+    margin: 10px;
+}
+p
+{
+    padding:100%;
+}
+span
+{
+    float: left;
+    width: 100%;
+    padding-top: 100%;
+
+    margin: 5px;
+    background: #FFA600;
+    border:5px solid #FFA600;
+    border-radius: 25px;
+}
