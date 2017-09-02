@@ -5,11 +5,10 @@
 }
 .a-block {
     float: left ;
-    width: 30vw;
-    height: 30vw;
-    margin: .9vw;
+    width: 32vw;
+    height: 32vw;
+    margin: .3vw;
     background: #FFA600;
-    border:5px solid #FFA600;
     border-radius: 25px;
 }
 button {
