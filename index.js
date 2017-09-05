@@ -1,10 +1,18 @@
+
+
 var int1, int2;
 function begin() {
-    int2=self.setInterval("reset()",1000);
-    int1=self.setInterval("shining()", 1000);
+    // int2=self.setInterval("reset()",1000);
 
+
+    //先停止进行中的setinterval颜色变幻
+    window.clearInterval(int1);
+
+    //再开始改变颜色
+    int1=self.setInterval("shining()", 1000);
 }
 function  shining(){
+    reset();
     var block = document.getElementsByClassName("a-block");
     var returnArray = getRadomArrayItems(block.length, 3);
     block[returnArray[0]-1].style.background = randomColors();
@@ -16,7 +24,7 @@ function  stop(){
     //停止变幻颜色
     window.clearInterval(int1);
     //停止刷回原色
-    window.clearInterval(int2);
+    // window.clearInterval(int2);
 }
 //将所有的block背景色还原
 function  reset() {
