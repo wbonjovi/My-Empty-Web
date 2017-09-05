@@ -9,10 +9,36 @@
     height: 32vw;
     margin: .3vw;
     background: #FFA600;
-    border-radius: 25px;
+    border-radius: 15px;
+}
+@media all and (max-width: 770px) {
+    .a-block {
+        width: 31.5vw;
+        height: 31.5vw;
+        margin:  .3vw;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-wrap:   wrap;
+    }
+    .a-block {
+        width: 31vw;
+        height: 31vw;
+        margin:  .3vw;
+    }
+}
+footer {
+    width: 100%;
+    overflow: hidden;
 }
 button {
-    width: 100vw;
+    width: 100%;
     padding: 1.5rem;
     font-size: 2rem;
     border: solid 3px #FFA600;
@@ -20,8 +46,13 @@ button {
     color: #FFA600;
     border-radius: 10px;
     margin: .5rem 0;
+    outline: none;
 }
 button:hover {
     background-color: #FFA600;
     color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
 }
