@@ -20,11 +20,9 @@ function  shining(){
     block[returnArray[2]-1].style.background = randomColors();
 }
 function  stop(){
-    reset();
     //停止变幻颜色
     window.clearInterval(int1);
-    //停止刷回原色
-    // window.clearInterval(int2);
+    reset();
 }
 //将所有的block背景色还原
 function  reset() {
